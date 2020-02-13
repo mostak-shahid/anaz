@@ -1,0 +1,44 @@
+body{font-family:'DM Sans', sans-serif;font-size: 16px;line-height: 26px}
+.bg-green{background-color:#008142}
+.bg-orange{background-color:#D43900}
+.bg-dark-green{background-color:#182932}
+.bg-gray{background-color:#8FA89C}
+.bg-gray-2{background-color:#59655F}
+.bg-off-white{background-color:#F1F3F6}/*BG*/
+.bg-yellow{background-color:#FFEB44}
+.bg-dark-green-2{background-color:#073820}
+.text-green{color:#008142}
+.text-orange{color:#D43900}
+.text-dark-green{color:#182932}
+.text-gray{color:#8FA89C}
+.text-gray-2{color:#59655F}
+.text-off-white{color:#F1F3F6}/*BG*/
+.text-yellow{color:#FFEB44}
+.text-dark-green-2{color:#073820}
+.font-size-36{font-size:36px}
+.font-size-24{font-size:24px}
+.font-size-20{font-size:20px}
+.font-size-18{font-size:18px}
+.font-size-16{font-size:16px}
+.font-size-14{font-size:14px}
+.font-size-12{font-size:12px}
+.line-height-47{line-height:47px}
+.line-height-35{line-height:35px}
+.line-height-30{line-height:30px}
+.line-height-28{line-height:28px}
+.line-height-16{line-height:16px}
+.line-height-24{line-height:24px}
+.line-height-22{line-height:22px}
+.line-height-18{line-height:18px}
+.line-height-18{line-height:16px}
+.vertically-align-top{vertical-align: top;}
+.vertically-align-middle{vertical-align: middle;}
+.pt15{padding-top: 15px;}
+.pb15{padding-bottom: 15px;}
+#top-bar .content-wrap{padding-top: 10px;padding-bottom: 10px;}
+#top-bar .btn-wholesale{padding: 10px 14px;margin-left: 30px;}
+#top-bar .btn-phone{padding: 0;margin-left: 50px;}
+#top-bar .login-con{margin-right: 15px;}
+#top-bar .btn-login{padding: 0;line-height: 36px;border-style: none}
+#top-bar .dashboard-con{margin-right: 40px;}
+#menu-bar .menu-item{padding-top: 15px;padding-bottom: 15px;}
