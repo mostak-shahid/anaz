@@ -1,9 +1,24 @@
 jQuery(document).ready(function($){
+
+    /*$('#section-banner-owl').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        items:1,
+        margin: 0,              
+        lazyLoad: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+    });
+
     if ($(window).width() <= 992){
         $('.widgets-title.collapsable').on('click',function(){
             $(this).next('.footer-menu').slideToggle();
         });
-    }
+    }*/
 });
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
