@@ -10,6 +10,7 @@ a:visited,a:hover,a:active,a:focus{text-decoration:none}
 .bg-off-white{background-color:#F1F3F6}/*BG*/
 .bg-yellow{background-color:#FFEB44}
 .bg-dark-green-2{background-color:#073820}
+.bg-off-white-2{background-color:#E5E5E5}
 .text-green{color:#008142}
 .text-orange{color:#D43900}
 .text-dark-green{color:#182932}
@@ -18,6 +19,7 @@ a:visited,a:hover,a:active,a:focus{text-decoration:none}
 .text-off-white{color:#F1F3F6}/*BG*/
 .text-yellow{color:#FFEB44}
 .text-dark-green-2{color:#073820}
+.btn-outline-green{border-color:#008142}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{color: #182932;}
 .h1, h1{font-size:30px;line-height:39px}
 .h2, h2{font-size:24px;line-height:31px}
@@ -47,6 +49,7 @@ a:visited,a:hover,a:active,a:focus{text-decoration:none}
 .font-weight-medium{font-weight: 500}
 .vertically-align-top{vertical-align:top}
 .vertically-align-middle{vertical-align:middle}
+.p15{padding:15px}
 .pt15{padding-top:15px}
 .pb15{padding-bottom:15px}
 .mt10{margin-top:10px}
@@ -93,7 +96,14 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 #banner .carousel-indicators{padding: 7px;background-color: rgba(255,255,255,.1);border-radius: 24px;}
 #banner .carousel-indicators li{width: 10px;height: 10px;border-radius: 10px;background-color: rgba(0,0,0,.4);opacity: 1;filter: alpha(opacity=100);border-style: none}
 #banner .carousel-indicators li.active{background-color: #ffffff;}
-#page-content .content-wrap{padding-top: 100px;padding-bottom: 100px;}
+#page-content .content-wrap{padding-top: 5.2vw;padding-bottom: 5.2vw;}
+#products .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
+
+.form-control.product-search{height: 45px;}
+.product-unit{border-radius: 5px;overflow: hidden; -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); }
+.product-unit .premium{position: absolute; bottom: 0; right: 0; padding-left: 9px; padding-right: 9px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.product-unit .btn-product{border-width: 1px;border-style: solid;}
+#categories .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
 #footer .content-wrap{padding-top:40px;padding-bottom:66px}
 #footer .seperator{border-bottom: 2px solid rgba(255,255,255,.1);margin-top: 40px;margin-bottom: 50px;}
 #footer .widgets-title{margin-bottom: 25px;}
