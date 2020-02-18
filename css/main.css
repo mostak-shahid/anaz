@@ -93,25 +93,36 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 #top-bar .login-con{margin-right:15px}
 #top-bar .btn-login{padding:0;line-height:36px;border-style:none}
 #top-bar .dashboard-con{margin-right:20px}
+#top-bar .shop-nav{padding-top: 2px;padding-bottom: 2px;}
 #menu-bar{box-shadow:0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)}
 #menu-bar .menu-item{padding-top:15px;padding-bottom:15px}
-#banner .indicators-wrapper {position: absolute; left: 0; right: 0; bottom: 0; text-align: center; }
-#banner .carousel-indicators{padding: 7px;background-color: rgba(255,255,255,.1);border-radius: 24px;}
-#banner .carousel-indicators li{width: 10px;height: 10px;border-radius: 10px;background-color: rgba(0,0,0,.4);opacity: 1;filter: alpha(opacity=100);border-style: none}
+#banner .indicators-wrapper {position: absolute; left: 0; right: 0; bottom: 0; text-align: center;padding-bottom: 10px;}
+#banner .carousel-indicators{position: relative;display: inline-block;padding-left: 7px;padding-right: 7px;margin-left: 0;margin-right: 0;background-color: rgba(255,255,255,.1);border-radius: 24px;margin-bottom: 0;}
+#banner .carousel-indicators li{display: inline-block;width: 10px;height: 10px;border-radius: 10px;background-color: rgba(0,0,0,.4);opacity: 1;filter: alpha(opacity=100);border-style: none}
 #banner .carousel-indicators li.active{background-color: #ffffff;}
 #page-content .content-wrap{padding-top: 5.2vw;padding-bottom: 5.2vw;}
 #products .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
 
 .form-control.product-search{height: 45px;}
+
+.form-control.product-search::-webkit-input-placeholder {color: rgba(24, 41, 50, .4);}
+.form-control.product-search::-moz-placeholder {color: rgba(24, 41, 50, .4);}
+.form-control.product-search:-ms-input-placeholder {color: rgba(24, 41, 50, .4);}
+.form-control.product-search:-moz-placeholder {color: rgba(24, 41, 50, .4);}
+
 .product-unit{border-radius: 5px;overflow: hidden; -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); }
 .product-unit .premium{position: absolute; bottom: 0; right: 0; padding-left: 9px; padding-right: 9px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
 .product-unit .btn-product{border-width: 1px;border-style: solid;}
 #categories .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
 #categories .category-unit{border: 1px solid rgba(0, 0, 0, 0.08);}
+#categories .img-category{margin-bottom: 5px;}
 #footer .content-wrap{padding-top:40px;padding-bottom:66px}
 #footer .seperator{border-bottom: 2px solid rgba(255,255,255,.1);margin-top: 40px;margin-bottom: 50px;}
 #footer .widgets-title{margin-bottom: 25px;}
 #footer .menu-item a{line-height: 45px;}
+@media (min-width:400px) {
+	#top-bar .shop-nav{padding-top: 15px;padding-bottom: 15px;}
+}
 /*Small devices (landscape phones,576px and up)*/
 @media (min-width:576px) {}
 /* Medium devices (tablets,768px and up) */
@@ -157,8 +168,9 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 	.mr-md-60{margin-right:60px}
 	.mb-md-60{margin-bottom:60px}
 	.ml-md-60{margin-left:60px}
-	#banner .carousel-indicators{left: auto;}
+	#banner .indicators-wrapper {padding-right: 30px;padding-bottom: 30px;text-align: right;}
 	#top-bar .dashboard-con{margin-right:40px}
+	#categories .img-category{margin-bottom: 12px;}
 }
 
 /* Extra large devices (large desktops,1200px and up) */
@@ -170,8 +182,6 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 
 /* Medium devices (tablets,less than 992px) */
 @media (max-width:991.98px){
-	#banner .carousel-indicators {left: auto; right: auto; margin-left: auto; margin-right: auto; display: inline-block; height: 24px; }
-	#banner .carousel-indicators li{vertical-align: top;display: inline-block;}
 	.media-wrap + .media-wrap{border-top: 1px solid rgba(255,255,255,.1);padding-top: 20px;margin-top: 20px;}
 	#footer .seperator{margin-top: 30px;margin-bottom: 40px;}
 	#footer .footer-menu{display: none;}
@@ -182,3 +192,8 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 
 /* Extra small devices (portrait phones,less than 576px) */
 @media (max-width:575.98px){}
+@media (max-width:399.98px){
+	#top-bar .img-logo{height: 30px;width: auto;}
+	#top-bar .img-user-icon{width: 24px;height: 24px;}
+
+}
