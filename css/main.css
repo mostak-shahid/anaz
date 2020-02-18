@@ -52,6 +52,9 @@ a:visited,a:hover,a:active,a:focus{text-decoration:none}
 .p15{padding:15px}
 .pt15{padding-top:15px}
 .pb15{padding-bottom:15px}
+.p30{padding:30px}
+.pt30{padding-top:30px}
+.pb30{padding-bottom:30px}
 .mt10{margin-top:10px}
 .mr10{margin-right:10px}
 .mb10{margin-bottom:10px}
@@ -104,6 +107,7 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 .product-unit .premium{position: absolute; bottom: 0; right: 0; padding-left: 9px; padding-right: 9px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
 .product-unit .btn-product{border-width: 1px;border-style: solid;}
 #categories .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
+#categories .category-unit{border: 1px solid rgba(0, 0, 0, 0.08);}
 #footer .content-wrap{padding-top:40px;padding-bottom:66px}
 #footer .seperator{border-bottom: 2px solid rgba(255,255,255,.1);margin-top: 40px;margin-bottom: 50px;}
 #footer .widgets-title{margin-bottom: 25px;}
