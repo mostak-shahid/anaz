@@ -63,6 +63,10 @@ a:visited,a:hover,a:active,a:focus{text-decoration:none}
 .mr15{margin-right:15px}
 .mb15{margin-bottom:15px}
 .ml15{margin-left:15px}
+.mt20{margin-top:20px}
+.mr20{margin-right:20px}
+.mb20{margin-bottom:20px}
+.ml20{margin-left:20px}
 .mt30{margin-top:30px}
 .mr30{margin-right:30px}
 .mb30{margin-bottom:30px}
@@ -96,6 +100,20 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 #top-bar .shop-nav{padding-top: 2px;padding-bottom: 2px;}
 #menu-bar{box-shadow:0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)}
 #menu-bar .menu-item{padding-top:15px;padding-bottom:15px}
+.link-unit{box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);border-radius: 5px}
+.link-unit.delivery-system{padding-top: 20px;padding-bottom: 20px;}
+.link-unit.delivery-system li{display: block;}
+.link-unit.delivery-system li a.menu-item{display: inline-block;font-size: 16px;line-height: 26px;color: #182932;padding: 15px 12px;border-left:2px solid transparent;border-top-right-radius: 28px;border-bottom-right-radius: 28px;}
+.link-unit.delivery-system li a.menu-item.active{font-weight: 700;color: #008142;background-color: #D2F8E5;border-color: #008142}
+
+.link-unit.categories{padding-bottom: 1px;}
+.link-unit.categories h4{font-weight: 500; font-size: 18px; line-height: 28px;padding: 14px 12px 10px;margin-bottom: 10px;border-bottom: 1px solid rgba(0,0,0,.06);}
+.link-unit.categories .menu-item{margin-bottom: 25px;padding-left: 12px;display: block;}
+.link-unit.categories .menu-item img{margin-right: 12px;}
+
+.link-unit.add-sec{padding: 10px;}
+.link-unit.quote{padding: 20px;}
+
 #banner .indicators-wrapper {position: absolute; left: 0; right: 0; bottom: 0; text-align: center;padding-bottom: 10px;}
 #banner .carousel-indicators{position: relative;display: inline-block;padding-left: 7px;padding-right: 7px;margin-left: 0;margin-right: 0;background-color: rgba(255,255,255,.1);border-radius: 24px;margin-bottom: 0;}
 #banner .carousel-indicators li{display: inline-block;width: 10px;height: 10px;border-radius: 10px;background-color: rgba(0,0,0,.4);opacity: 1;filter: alpha(opacity=100);border-style: none}
