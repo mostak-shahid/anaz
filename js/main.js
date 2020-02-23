@@ -1,5 +1,10 @@
 jQuery(document).ready(function($){
-
+    $('.menu-con').on('click',function(){
+        $('#mobile-menu-bar').toggleClass('active');
+    });
+    $('#mobile-menu-bar .category-opener').on('click',function(){
+        $(this).next('ul').slideToggle("slow");
+    });
     /*$('#section-banner-owl').owlCarousel({
         loop: true,
         nav: false,
