@@ -134,6 +134,10 @@ ol.red-num li:before {content: counter(li); color: #D43900; display: inline-bloc
 #categories .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw;}
 #categories .category-unit{border: 1px solid rgba(0, 0, 0, 0.08);}
 #categories .img-category{margin-bottom: 5px;}
+#widgets .content-wrap{padding-top: 50px;padding-bottom: 50px;} 
+#widgets .widget-title{font-weight: bold; font-size: 20px; line-height: 30px; color: #182932; }
+#widgets .widget-subtitle{font-size: 14px;line-height: 24px;color: #59655F;}
+
 #footer .content-wrap{padding-top:40px;padding-bottom:66px}
 #footer .seperator{border-bottom: 2px solid rgba(255,255,255,.1);margin-top: 40px;margin-bottom: 50px;}
 #footer .widgets-title{margin-bottom: 25px;}
