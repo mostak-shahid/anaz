@@ -84,16 +84,16 @@
 			<div class="container">
 				<div class="row justify-content-lg-center no-gutters">
 					<div class="col-lg-6">
-						<div class="form-container bg-white p30 p-md-50 login-wrapper">
+						<div class="form-container bg-white p30 p-md-50 login-wrapper position-relative">
 							<div class="text-center mb30 mb-lg-40">
 								<img class="mb15" src="images/login.png" alt="Call Icon">
 								<h2 class="text-dark-green mb15">Enter Your Mobile Number</h2>
-								<div class="dark-green">We will send an OTP to verify</div>
+								<div class="dark-green font-size-14 line-height-24">We will send an OTP to verify</div>
 							</div>
-							<form class="needs-validation" novalidate>
+							<form action="verify.html" method="post" class="needs-validation" novalidate>
 								<div class="form-group position-relative">
 									<label for="phone">Your Mobile Number</label>
-									<input name="phone" type="tel" class="form-control rounded-pill phone-input" id="phone" required>
+									<input name="phone" type="tel" class="form-control rounded-pill phone-input" id="phone" placeholder="Enter your mobile number" required>
 									<div class="invalid-feedback text-center">Please enter your mobile number.</div>
 									<img class="input-icon" src="images/login-phone.png">
 								</div>

@@ -151,26 +151,25 @@ ol.red-num li:before {content: counter(li);color: #D43900;display: inline-block;
 #categories .content-wrap{padding-top: 4.6875vw;padding-bottom: 4.6875vw}
 #categories .category-unit{border: 1px solid rgba(0, 0, 0, 0.08)}
 #categories .img-category{margin-bottom: 5px}
+.login-wrapper{border-radius: 5px;border:1px solid rgba(0,0,0,.1);}
 .login-wrapper .form-group{margin-bottom: 20px;}
-.login-wrapper .phone-input,.login-wrapper .form-submit{height: 40px;}
+.login-wrapper .phone-input,.login-wrapper .name-input,.login-wrapper .email-input,.login-wrapper .form-submit,.login-wrapper .city-select,.login-wrapper .area-select{height: 40px;}
 .login-wrapper .phone-input{padding-left: 40px;}
 .login-wrapper .input-icon{position: absolute;top: 45px;left: 10px;}
 .login-wrapper .login-info{color: #2F4A55;font-size: 12px;line-height: 22px;}
 .login-wrapper .login-info a{font-weight: bold;}
+.login-wrapper .back-link{position: absolute;left: 30px;top: 30px;}
+.login-wrapper .skip-link{position: absolute;right: 30px;top: 30px;text-transform: uppercase;}
+.login-wrapper .custom-control-input:checked~.custom-control-label::before{border-color: #008142;background-color: #008142;}
 #widgets .content-wrap{padding-top: 50px;padding-bottom: 50px} 
 #widgets .widget-title{font-weight: bold;font-size: 20px;line-height: 30px;color: #182932}
 #widgets .widget-subtitle{font-size: 14px;line-height: 24px;color: #59655F}
 
-input.validation-code::-webkit-outer-spin-button,
-input.validation-code::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
+input.validation-code{text-align: center;border-style: none;border-bottom: 2px solid #576B78;width: 50px;}
+input.validation-code:focus{border-bottom-color: #000000;}
+input.validation-code::-webkit-outer-spin-button, input.validation-code::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0; }
 /* Firefox */
-input.validation-code[type=number] {
-  -moz-appearance: textfield;
-}
+input.validation-code[type=number] {-moz-appearance: textfield; }
 
 #footer .content-wrap{padding-top:40px;padding-bottom:66px}
 #footer .seperator{border-bottom: 2px solid rgba(255,255,255,.1);margin-top: 40px;margin-bottom: 50px}
@@ -230,7 +229,7 @@ input.validation-code[type=number] {
 	#top-bar .dashboard-con{margin-right:40px}
 	#categories .img-category{margin-bottom: 12px}
 	.login-wrapper .form-group{margin-bottom: 40px;}
-	.login-wrapper .phone-input,.login-wrapper .form-submit{height: 45px;}
+	.login-wrapper .phone-input,.login-wrapper .name-input,.login-wrapper .email-input,.login-wrapper .form-submit,.login-wrapper .city-select,.login-wrapper .area-select{height: 45px;}
 }
 
 /* Extra large devices (large desktops,1200px and up) */
