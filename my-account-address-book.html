@@ -115,6 +115,78 @@
 		</div>
 	</section>
 	<section id="page-content" class="bg-off-white myaccount">
+	<div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="addressModalLabel">Add/Edit Address</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body login-wrapper">
+						<form method="post" class="needs-validation" novalidate="">
+							<div class="form-row">
+								<div class="col-lg-6">
+									<div class="form-group position-relative">
+										<label for="name">Full Name</label>
+										<input name="name" type="text" class="form-control rounded-pill name-input" id="name" placeholder="Enter your full name" required="">
+										<div class="invalid-feedback text-center">Please enter your full name.</div>
+									</div>										
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group position-relative">
+										<label for="phone">Your Mobile Number</label>
+										<input name="phone" type="tel" class="form-control rounded-pill phone-input" id="phone" placeholder="Enter your mobile number" required="">
+										<div class="invalid-feedback text-center">Please enter your mobile number.</div>
+										<img class="input-icon" src="images/login-phone.png">
+									</div>										
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="col-lg-6">
+									<div class="form-group position-relative">
+										<label for="city">City</label>
+										<select class="form-control rounded-pill city-select" id="city" name="city">
+											<option value="">Please choose your city</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<div class="invalid-feedback text-center">Please choose your city.</div>
+									</div>										
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group position-relative">
+										<label for="area">Area</label>
+										<select class="form-control rounded-pill area-select" id="area" name="area">
+											<option value="">Please choose your area</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<div class="invalid-feedback text-center">Please choose your area.</div>
+									</div>										
+								</div>
+							</div>
+							<div class="form-group position-relative">
+								<label for="address">Address</label>
+								<input name="address" type="text" class="form-control rounded-pill address-input" id="address" placeholder="For ex. House# 123, Street# 123, ABC Road" required="">
+								<div class="invalid-feedback text-center">Please enter address.</div>
+							</div>
+
+							<div class="custom-control custom-checkbox mr-sm-2 mb30">
+								<input type="checkbox" class="custom-control-input" id="default-address" name="defailt-address">
+								<label class="custom-control-label" for="default-address">Make this my default delivery address</label>
+							</div>
+							<button type="submit" class="btn btn-block rounded-pill bg-green text-uppercase text-white font-weight-bold form-submit">Save &amp; Continue</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="content-wrap">
 			<div class="container">
 				<div class="wrapper border-radius-5 bg-white">
@@ -128,30 +200,82 @@
 							</div>
 						</div>
 						<div class="col-lg-9">
-							<div class="lead text-dark-green myaccount-title">Account Information</div>
-							<div class="row">
-								<div class="col-lg-4 order-lg-last text-lg-center">
-									<img class="img-fluid mr20 ml20 mb20" src="images/add-user-photo.png" alt="Upload Photo" width="81" height="73">
-								</div>
-								<div class="col-lg-8">
-									<form method="post" class="needs-validation pl20 pr20 pb20 pl-md-30 pr-md-30 pb-md-30" novalidate="">
-										<div class="form-group mb20 mb-md-30">
-											<label for="name">Full Name</label>
-											<input name="name" type="text" class="form-control rounded-pill name-input" id="name" placeholder="Enter your full name" required>
-											<div class="invalid-feedback text-center">Please enter your full name.</div>
+							<div class="lead text-dark-green myaccount-title">Address Book</div>
+							<div class="pl20 pr20 pb20 pl-md-30 pr-md-30 pb-md-30">
+								<div class="row">
+									<div class="col-lg-4 mb30">
+										<div class="address-unit position-relative h-100 border-radius-5 bg-white default-address">	
+											<div class="wrapper">										
+												<div class="custom-control custom-radio">
+													<input type="radio" class="custom-control-input" id="address2" name="address" checked>
+													<label class="custom-control-label text-dark-green" for="address2">John Doe</label>
+												</div>
+												<div class="desc">
+													<div class="location">34/A, Road No: 5, Sector 9, House 7 Gulshan-2</div>
+													<div class="area">Dhaka - Uttara</div>
+													<div class="phone">Mobile: <strong>0123456789</strong></div>
+												</div>
+											</div>
+											<div class="action-buttons">
+												<div class="btn-group btn-group-justified w-100">
+													<button class="btn bg-white font-weight-bold text-gray" data-toggle="modal" data-target="#addressModal">Edit</button>
+													<button class="btn bg-white font-weight-bold text-orange">Delete</button>
+												</div>
+											</div>
 										</div>
-										<div class="form-group mb20 mb-md-30">
-											<label for="phone">Mobile Number</label>
-											<input name="phone" type="tel" class="form-control rounded-pill phone-input" id="phone" placeholder="Enter your mobile number" required="">
-											<div class="invalid-feedback text-center">Please enter your mobile number.</div>
+									</div>
+									<div class="col-lg-4 mb30">
+										<div class="address-unit position-relative h-100 border-radius-5 bg-white">	
+											<div class="wrapper">										
+												<div class="custom-control custom-radio">
+													<input type="radio" class="custom-control-input" id="address3" name="address">
+													<label class="custom-control-label text-dark-green" for="address3">John Doe</label>
+												</div>
+												<div class="desc">
+													<div class="location">34/A, Road No: 5, Sector 9, House 7 Gulshan-2</div>
+													<div class="area">Dhaka - Uttara</div>
+													<div class="phone">Mobile: <strong>0123456789</strong></div>
+												</div>
+											</div>
+											<div class="action-buttons">
+												<div class="btn-group btn-group-justified w-100">
+													<button class="btn bg-white font-weight-bold text-gray">Edit</button>
+													<button class="btn bg-white font-weight-bold text-orange">Delete</button>
+												</div>
+											</div>
 										</div>
-										<div class="form-group mb20 mb-md-30">
-											<label for="email">Email Address ( Optional )</label>
-											<input name="email" type="email" class="form-control rounded-pill name-input" id="email" placeholder="Enter your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email format.">
-											<div class="invalid-feedback text-center">Please enter your email address.</div>
+									</div>
+									<div class="col-lg-4 mb30">
+										<div class="address-unit position-relative h-100 border-radius-5 bg-white">	
+											<div class="wrapper">										
+												<div class="custom-control custom-radio">
+													<input type="radio" class="custom-control-input" id="address4" name="address">
+													<label class="custom-control-label text-dark-green" for="address4">John Doe</label>
+												</div>
+												<div class="desc">
+													<div class="location">34/A, Road No: 5, Sector 9, House 7 Gulshan-2</div>
+													<div class="area">Dhaka - Uttara</div>
+													<div class="phone">Mobile: <strong>0123456789</strong></div>
+												</div>
+											</div>
+											<div class="action-buttons">
+												<div class="btn-group btn-group-justified w-100">
+													<button class="btn bg-white font-weight-bold text-gray">Edit</button>
+													<button class="btn bg-white font-weight-bold text-orange">Delete</button>
+												</div>
+											</div>
 										</div>
-										<button type="submit" class="btn btn-block rounded-pill bg-green text-uppercase text-white font-weight-bold form-submit">Save &amp; Continue</button>
-									</form>
+									</div>
+									<div class="col-lg-4 mb30">									
+										<div class="address-unit position-relative h-100 border-radius-5 bg-white add-new">
+											<a href="#" class="d-flex justify-content-center align-items-center">
+												<span class="text-center">
+													<img class="img-fluid d-block mb30 " src="images/add-address.png" alt="">
+													Add New Address											
+												</span>
+											</a>
+										</div>
+									</div>							
 								</div>								
 							</div>
 						</div>
@@ -246,6 +370,14 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/main.js"></script>	
+	<script>
+	jQuery(document).ready(function($){
+		$('.myaccount .address-unit .wrapper').on('click',function(){
+			$(this).closest('.col-lg-4').siblings().find('.default-address').removeClass('default-address').find('.custom-control-input').prop('checked', false);
+			$(this).parent().addClass('default-address').find('.custom-control-input').prop('checked', true);
+		});
+    });		
+	</script>
 </body>
 </html>

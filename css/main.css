@@ -145,6 +145,20 @@ ol.red-num li:before {content: counter(li);color: #D43900;display: inline-block;
 
 
 .myaccount-title{padding:20px;border-bottom: 1px solid rgba(143, 168, 156, .2);}
+.myaccount .address-unit{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.myaccount .address-unit.default-address label{font-weight: 700}
+.myaccount .address-unit.default-address:before{content: 'Default';position: absolute;top: 0;right: 0;font-weight: 700;color: #182932;background-color: #FFEB44;padding: 0 13px;}
+.myaccount .address-unit .custom-control.custom-radio {padding-top: 20px; padding-left: 40px; }
+.myaccount .address-unit:not(.add-new) {padding-bottom: 42px;}
+.myaccount .address-unit:not(.add-new) .wrapper {cursor: pointer;}
+.myaccount .address-unit .desc {padding: 16px;margin-left: 25px;}
+.myaccount .address-unit .action-buttons{position: absolute;bottom: 0;width: 100%;border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.myaccount .address-unit .action-buttons .btn{padding-top: 8px;padding-bottom: 8px;}
+.myaccount .address-unit.add-new a{min-height: 220px!important;}
+.myaccount .address-unit.add-new a img{margin-left: auto;margin-right: auto;}
 
 .form-control.product-search{height: 45px}
 
@@ -169,7 +183,7 @@ ol.red-num li:before {content: counter(li);color: #D43900;display: inline-block;
 .login-wrapper .login-info a{font-weight: bold;}
 .login-wrapper .back-link{position: absolute;left: 30px;top: 30px;}
 .login-wrapper .skip-link{position: absolute;right: 30px;top: 30px;text-transform: uppercase;}
-.login-wrapper .custom-control-input:checked~.custom-control-label::before{border-color: #008142;background-color: #008142;}
+.custom-control-input:checked~.custom-control-label::before{border-color: #008142;background-color: #008142;}
 #widgets .content-wrap{padding-top: 50px;padding-bottom: 50px} 
 #widgets .widget-title{font-weight: bold;font-size: 20px;line-height: 30px;color: #182932}
 #widgets .widget-subtitle{font-size: 14px;line-height: 24px;color: #59655F}
