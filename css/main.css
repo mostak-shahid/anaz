@@ -25,6 +25,7 @@ label{margin-bottom: 8px;}
 .text-yellow{color:#FFEB44}
 .text-dark-green-2{color:#073820}
 .btn-outline-green{border-color:#008142}
+.btn-green{border-color:#008142!important}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{color: #182932}
 .h1, h1{font-size:30px;line-height:39px}
 .h2, h2{font-size:24px;line-height:31px}
@@ -54,6 +55,11 @@ label{margin-bottom: 8px;}
 .font-weight-medium{font-weight: 500}
 .vertically-align-top{vertical-align:top}
 .vertically-align-middle{vertical-align:middle}
+.p10{padding: 10px;}
+.pt10{padding-top: 10px;}
+.pr10{padding-right: 10px;}
+.pb10{padding-bottom: 10px;}
+.pl10{padding-left: 10px;}
 .p15{padding:15px}
 .pt15{padding-top:15px}
 .pb15{padding-bottom:15px}
@@ -90,6 +96,10 @@ label{margin-bottom: 8px;}
 .mb60{margin-bottom:60px}
 .ml60{margin-left:60px}
 .border-radius-5{border-radius:5px;overflow: hidden;}
+.border-radius-10{border-radius:10px;overflow: hidden;}
+.table-paddingless td,.table-paddingless th{padding: 0;}
+.table-order-details td,.table-order-details th{padding: 5px 0;}
+.table-order-details tr > td:first-child{width: 80px;}
 ul,ol {padding-left: 16px;list-style: none}
 ul.red-dot li:before {content: "\2022";color: #D43900;font-weight: bold;display: inline-block;width: 8px;margin-left: -1em;margin-right: 13px}
 ol.red-num {counter-reset: li}
@@ -258,6 +268,10 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 	.mr-md-60{margin-right:60px}
 	.mb-md-60{margin-bottom:60px}
 	.ml-md-60{margin-left:60px}
+	.order-products{height: 570px;overflow-y: auto;}
+	.table-order-details tr > td:first-child{width: 130px;}
+	.table-order-details td,.table-order-details th{padding: 10px 0;}
+
 	.link-unit.delivery-system{margin-top: 145px}
 	#banner .indicators-wrapper {padding-right: 30px;padding-bottom: 30px;text-align: right}
 	#top-bar .dashboard-con{margin-right:40px}
