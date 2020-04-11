@@ -13,14 +13,12 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Hello, world!</title>
 </head>
-<body class="logged-in">
-	<div class="text-white loader" style="display:none"><div><i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i></div></div>
+<body>
 	<section id="top-bar" class="bg-white">
 		<div class="content-wrap">
 			<div class="container">
@@ -34,12 +32,9 @@
 						<div class="phone-con d-none d-lg-inline-block"><a class="btn btn-phone text-green font-weight-bold" href="tel:+8801787656627"><img class="img-fluid img-external-link vertically-align-middle" src="images/call-icon.png"> 017 876 566 27</a></div>
 					</div>
 					<div class="col-4 text-right shop-nav">
-						<div class="text-left login-con d-none d-lg-inline-block text-dark-green line-height-18 font-size-12">
-							<div>Hello,</div>
-							<div class="font-size-14 font-weight-bold">Morris Lane...</div>
-						</div>
+						<div class="login-con d-none d-lg-inline-block"><a class="btn-login text-dark-green" href="#">Login</a>/<a class="btn-login text-dark-green" href="#">Sign up</a></div>
 						<div class="dashboard-con d-inline-block"><a class="btn-dashboard" href="#"><img class="img-fluid img-user-icon" src="images/user-icon.png" alt="User Icon" width="36" height="36"></a></div>
-						<img class="img-fluid img-user-icon" src="images/bag-icon.png" alt="Cart Icon" width="36" height="36"><span class="cart-count">1</span></a></div>
+						<div class="cart-con d-inline-block"><a class="btn-cart-icon" href="#"><img class="img-fluid img-user-icon" src="images/bag-icon.png" alt="Cart Icon" width="36" height="36"></a></div>
 					</div>
 				</div>
 			</div>
@@ -84,7 +79,142 @@
 			</ul>
 		</div>		
 	</section>
-	<section id="widgets" class="bg-off-white">
+	<!-- <img src="/images/foo.png" alt="bar" srcset="images/banner-image-1200.png 1200w,images/banner-image-992.png 992w, images/banner-image-768.png 768w, images/banner-image-576.png 576w, images/banner-image-360.png 360w"/> -->
+	<!-- <img src="/images/foo.png" alt="bar" srcset="/images/foo-medium.png 1024w, /images/foo.png 800w" sizes="(min-width: 1024px) 1024px, 800px"/> -->
+
+	<section id="page-content" class="bg-off-white">
+		<div class="content-wrap">
+			<div class="container">				
+				<h1>Your Cart</h1>
+				<div class="d-none d-lg-block">
+					<table class="table cart-table">
+						<thead>
+							<tr>							
+								<th scope="col" style="width: 50%">Items</th>
+								<th scope="col">Price</th>
+								<th scope="col">Quatity</th>
+								<th scope="col">Subtotal</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="items">
+									<div class="d-inline-block">								
+										<img class="img-fluid img-cart" src="images/cart-table-product-1.png" alt="">
+									</div>
+									<div class="d-inline-block pl10">
+										<span class="text-gray font-size-18 line-height-28">
+											<span class="text-dark-green-2 font-size-18 line-height-24 font-weight-bold">Anaz Couple Box 1</span><br>1 kg
+										</span>
+									</div>
+								</td>
+								<td class="price">
+									<span class="text-green font-weight-bold font-size-18 line-height-24">৳ 90</span><br>
+									<span class="text-gray">৳ 290</span> <span class="text-orange font-weight-bold">- 20%</span>
+								</td>
+								<td class="quatity"><input type="number" value="1" min="1" step="1"/></td>
+								<td class="subtotal">৳ 1,080</td>
+								<td class="text-right"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></td>
+							</tr>
+							<tr>
+								<td class="items">
+									<div class="d-inline-block">								
+										<img class="img-fluid img-cart" src="images/cart-table-product-1.png" alt="">
+									</div>
+									<div class="d-inline-block pl10">
+										<span class="text-gray font-size-18 line-height-28">
+											<span class="text-dark-green-2 font-size-18 line-height-24 font-weight-bold">Anaz Couple Box 1</span><br>1 kg
+										</span>
+									</div>
+								</td>
+								<td class="price">
+									<span class="text-green font-weight-bold font-size-18 line-height-24">৳ 90</span><br>
+									<span class="text-gray">৳ 290</span> <span class="text-orange font-weight-bold">- 20%</span>
+								</td>
+								<td class="quatity"><input type="number" value="1" min="1" step="1"/></td>
+								<td class="subtotal">৳ 1,080</td>
+								<td class="text-right"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="d-lg-none">
+					<div class="media cart-media bg-white border-radius-5 pt15 pr10 pb15 pl10 mb10">
+						<img src="images/cart-table-product-1.png" class="align-self-center mr-3" alt="Product Name" width="100" height="">
+						<div class="media-body align-self-center">
+							<div class="d-table w-100">							
+								<div class="d-table-cell test-dark-green-2 font-size-14 line-height-24 font-weight-bold">Anaz Couple Box 1</div>
+								<div class="d-table-cell text-right"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></div>
+							</div>
+							<div class="font-size-12 line-height-16 font-weight-bold">
+								<span class="text-gray">1 kg</span> <span class="text-green">৳ 90</span>
+							</div>
+							<div class="d-table w-100">
+								<div class="d-table-cell font-size-14 line-height-18 font-weight-bold text-dark-green">৳ 1,025</div>
+								<div class="d-table-cell text-right">
+									<input type="number" value="1" min="1" step="1">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="media cart-media bg-white border-radius-5 pt15 pr10 pb15 pl10 mb10">
+						<img src="images/cart-table-product-1.png" class="align-self-center mr-3" alt="Product Name">
+						<div class="media-body align-self-center">
+							<div class="d-table w-100">							
+								<div class="d-table-cell test-dark-green-2 font-size-14 line-height-24 font-weight-bold">Anaz Couple Box 1</div>
+								<div class="d-table-cell text-right"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></div>
+							</div>
+							<div class="font-size-12 line-height-16 font-weight-bold">
+								<span class="text-gray">1 kg</span> <span class="text-green">৳ 90</span>
+							</div>
+							<div class="d-table w-100">
+								<div class="d-table-cell font-size-14 line-height-18 font-weight-bold text-dark-green">৳ 1,025</div>
+								<div class="d-table-cell text-right">
+									<input type="number" value="1" min="1" step="1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-end">
+					<div class="col-lg-5">
+						<div class="bg-white border-radius-5 price-details">	
+							<div class="pl20 pr20 pt25 pb25 p-md-40">					
+								<div class="text-dark-green font-weight-bold font-size-16 line-height-22 font-size-18 line-height-md-24">PRICE DETAILS</div>
+								<table class="table table-borderless summery-table">
+									<tr>
+										<td>Subtotal (4 items)</td>
+										<th>৳ 2,280</th>
+									</tr>
+									<tr>
+										<td>Shipping Fee</td>
+										<th>৳ 45</th>
+									</tr>
+								</table>
+								<div class="input-group coupon-group">
+									<input type="text" class="form-control" placeholder="Coupon code" aria-label="Coupon code" aria-describedby="button-addon2">
+									<div class="input-group-append">
+									<button class="btn text-orange" type="button" id="button-addon2">APPLY</button>
+									</div>
+								</div>
+							</div>
+							<div class="pl20 pr20 pt25 pb25 p-md-40 border-top">
+								<table class="table table-borderless">
+									<tr>
+										<th>Subtotal (4 items)</th>
+										<th class="text-green text-right">৳ 2,280</th>
+									</tr>
+								</table>
+								<button class="btn btn-block bg-green btn-green text-uppercase rounded-pill text-white">PROCEED TO CHECKOUT</button>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="widgets" class="bg-white">
 		<div class="content-wrap">
 			<div class="container">
 				<div class="row">
@@ -204,7 +334,16 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
+
+	<script src="plugins/bootstrap-input-spinner.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+			$("input[type='number']").inputSpinner({
+				buttonsWidth: "16px",
+			});
+		});
+	</script>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

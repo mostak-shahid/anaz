@@ -68,6 +68,11 @@ label{margin-bottom: 8px;}
 .pr20{padding-right: 20px;}
 .pb20{padding-bottom: 20px;}
 .pl20{padding-left: 20px;}
+.p25{padding: 25px;}
+.pt25{padding-top: 25px;}
+.pr25{padding-right: 25px;}
+.pb25{padding-bottom: 25px;}
+.pl25{padding-left: 25px;}
 .p30{padding:30px}
 .pt30{padding-top:30px}
 .pb30{padding-bottom:30px}
@@ -97,7 +102,7 @@ label{margin-bottom: 8px;}
 .ml60{margin-left:60px}
 .border-radius-5{border-radius:5px;overflow: hidden;}
 .border-radius-10{border-radius:10px;overflow: hidden;}
-.table-paddingless td,.table-paddingless th{padding: 0;}
+.price-details td,.price-details th{padding: 0;}
 .table-order-details td,.table-order-details th{padding: 5px 0;}
 .table-order-details tr > td:first-child{width: 80px;}
 ul,ol {padding-left: 16px;list-style: none}
@@ -112,10 +117,29 @@ ol.red-num li:before {content: counter(li);color: #D43900;display: inline-block;
 .accordion-title:hover,.accordion-title.collapsed:hover{color: #008142}
 .accordion-text{padding-left: 40px}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{font-weight: 700;color: #ffffff;background-color:#D43900}
+.cart-table.table th{border-top-style: none}
+.cart-table.table,.cart-table.table th{border-bottom: 1px solid #008142; }
+.cart-table.table td, .cart-table.table th, .cart-table.table td div, .cart-table.table th div{vertical-align: middle;}
+.cart-table .quatity .input-group,.cart-media .input-group {max-width: 130px;border: 1px solid #8FA89C;border-radius: 50rem!important;}
+.cart-media .input-group {margin-left: auto;max-width: 80px;}
+
+.cart-media .input-group .form-control{height: 30px;}
+.cart-media .input-group .form-control,.cart-media .input-group button{padding:0;text-align: center;}
+.cart-table .quatity .input-group .form-control, .cart-table .quatity .input-group button,.cart-media .input-group .form-control, .cart-media .input-group button{background-color: transparent!important;border-style: none;color: #000000!important;}
+.cart-table .subtotal{font-weight:700;font-size: 18px;line-height: 24px;}
+.cart-media{border: 1px solid rgba(0, 0, 0, 0.1);box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+.coupon-group{background-color: #F1F3F6;border: 1px solid rgba(0, 0, 0, 0.1);}
+.summery-table {font-size: 18px;line-height: 30px;}
+.summery-table td,.summery-table th {padding: 0;}
+.summery-table td {color: #59655F;}
+.summery-table th {color: #182932;text-align: right;}
+.coupon-group{border: 1px solid #8FA89C;border-radius: 50rem!important;}
+.coupon-group .form-control,.coupon-group button{background-color: transparent;border-style: none}
 #top-bar .content-wrap{padding-top:10px;padding-bottom:10px}
 #top-bar .btn-wholesale{padding:10px 14px;margin-left:30px}
 #top-bar .btn-phone{padding:0;margin-left:50px}
-#top-bar .login-con{margin-right:15px}
+#top-bar .login-con{margin-right:15px;vertical-align: middle;}
 #top-bar .btn-login{padding:0;line-height:36px;border-style:none}
 #top-bar .dashboard-con{margin-right:20px}
 #top-bar .shop-nav{padding-top: 2px;padding-bottom: 2px}
@@ -248,7 +272,6 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 	.line-height-md-22{line-height:22px}
 	.line-height-md-18{line-height:18px}
 	.line-height-md-16{line-height:16px}
-	.p-md-50{padding: 50px;}
 	.pt-md-15{padding-top:15px}
 	.pb-md-15{padding-bottom:15px}
 	.p-md-30{padding: 30px;}
@@ -256,6 +279,8 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 	.pr-md-30{padding-right: 30px;}
 	.pb-md-30{padding-bottom: 30px;}
 	.pl-md-30{padding-left: 30px;}
+	.p-md-40{padding: 40px;}
+	.p-md-50{padding: 50px;}
 	.mt-md-15{margin-top:15px}
 	.mr-md-15{margin-right:15px}
 	.mb-md-15{margin-bottom:15px}
@@ -271,7 +296,7 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 	.order-products{height: 570px;overflow-y: auto;}
 	.table-order-details tr > td:first-child{width: 130px;}
 	.table-order-details td,.table-order-details th{padding: 10px 0;}
-
+	.summery-table {font-size: 20px;}
 	.link-unit.delivery-system{margin-top: 145px}
 	#banner .indicators-wrapper {padding-right: 30px;padding-bottom: 30px;text-align: right}
 	#top-bar .dashboard-con{margin-right:40px}
