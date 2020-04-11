@@ -5,6 +5,9 @@ jQuery(document).ready(function($){
     $('#mobile-menu-bar .category-opener').on('click',function(){
         $(this).next('ul').slideToggle("slow");
     });
+    $('#top-bar .menu-meta-activator').on('click',function(){
+        $('#top-bar .user-meta').toggleClass('active');
+    });
     if ($(window).width() <= 992){
         $('#footer .collapsable').on('click', function(){
             $(this).next('ul').slideToggle("slow");

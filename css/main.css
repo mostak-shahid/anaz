@@ -143,7 +143,16 @@ ol.red-num li:before {content: counter(li);color: #D43900;display: inline-block;
 #top-bar .btn-login{padding:0;line-height:36px;border-style:none}
 #top-bar .dashboard-con{margin-right:20px}
 #top-bar .shop-nav{padding-top: 2px;padding-bottom: 2px}
-#top-bar .cart-count {background-color: #F15A38; color: #ffffff; font-size: 11px; line-height: 19px; font-weight: 700; border-radius: 19px; position: absolute; top: 12px; right: 5px; display: inline-block; min-width: 19px; text-align: center; padding: 0px 5px; }
+#top-bar .cart-count {background-color: #F15A38; color: #ffffff; font-size: 11px; line-height: 19px; font-weight: 700; border-radius: 19px; position: absolute; top: 12px; right: 5px; display: inline-block; min-width: 19px; text-align: center; padding: 0px 5px;}
+#top-bar .menu-meta-activator{cursor: pointer;}
+#top-bar .user-meta{position: absolute;top: 100%;right: 20%;border: 1px solid rgba(0, 0, 0, 0.1);box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);z-index: 9999;padding: 10px 20px;width: 260px;display: none;}
+#top-bar .user-meta.active{display: block;-webkit-animation-name: fadeInUp; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; animation-name: fadeInUp; animation-duration: 1s; animation-iteration-count: 1;}
+#top-bar .user-meta .meta-link a{padding-top: 7px;padding-bottom: 7px;padding-left: 40px;display: block;background-repeat: no-repeat;background-position: left center;}
+#top-bar .user-meta .meta-link a.meta-profile{background-image: url('../images/meta-user.png');}
+#top-bar .user-meta .meta-link a.meta-history{background-image: url('../images/meta-history.png');}
+#top-bar .user-meta .meta-link a.meta-logout{background-image: url('../images/meta-logout.png');}
+#top-bar .user-meta .seperator{border-top: 1px solid rgba(0,0,0,.08);padding-top: 10px;margin-top: 10px;margin-left: -20px;margin-right: -20px;display: block;}
+
 #menu-bar{box-shadow:0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04)}
 #menu-bar .menu-item{padding-top:15px;padding-bottom:15px}
 #mobile-menu-bar{position: fixed;left: -100%;width: calc(100% - 70px);top: 86px;bottom: 0;max-height: 100%;overflow-y: scroll;z-index: 999;box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
@@ -347,7 +356,7 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 /* Extra small devices (portrait phones,less than 576px) */
 @media (max-width:575.98px){}
 @media (max-width:399.98px){
-	#top-bar .img-logo{height: 30px;width: auto}
+	#top-bar .img-logo{width: 60px}
 	#top-bar .img-user-icon{width: 24px;height: 24px}
 	#mobile-menu-bar{top: 50px}
 
