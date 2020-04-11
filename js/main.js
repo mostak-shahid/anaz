@@ -5,6 +5,11 @@ jQuery(document).ready(function($){
     $('#mobile-menu-bar .category-opener').on('click',function(){
         $(this).next('ul').slideToggle("slow");
     });
+    if ($(window).width() <= 992){
+        $('#footer .collapsable').on('click', function(){
+            $(this).next('ul').slideToggle("slow");
+        });
+    }
     /*$('#section-banner-owl').owlCarousel({
         loop: true,
         nav: false,

@@ -336,6 +336,9 @@ input.validation-code[type=number] {-moz-appearance: textfield; }
 	.w-sm-50{width: 50%;float: left;}
 	.custom-table-row{border-radius: 5px;margin-bottom: 20px;background-color: #F1F3F6;padding: 10px;}
 	.seperator{border-bottom: 1px solid rgba(47, 47, 47, .08);padding-bottom: 12px;margin-bottom: 8px;clear: both;}
+	#footer .widgets-title{border-top: 1px solid rgba(255,255,255,.1);margin:0;padding: 14px 0;}
+	#footer .collapsable{cursor: pointer;}
+	#footer .collapsable:after{content: '+';float: right;}
 }
 
 /* Small devices (landscape phones,less than 768px) */
