@@ -114,8 +114,8 @@
 			</div>			
 		</div>
 	</section>
-	<section id="page-content" class="bg-off-white myaccount">
-	<div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
+	<section id="page-content" class="bg-off-white address-book">
+		<div class="modal fade" id="addressModal" tabindex="-1" role="dialog" aria-labelledby="addressModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -239,7 +239,7 @@
 											</div>
 											<div class="action-buttons">
 												<div class="btn-group btn-group-justified w-100">
-													<button class="btn bg-white font-weight-bold text-gray">Edit</button>
+													<button class="btn bg-white font-weight-bold text-gray" data-toggle="modal" data-target="#addressModal">Edit</button>
 													<button class="btn bg-white font-weight-bold text-orange">Delete</button>
 												</div>
 											</div>
@@ -260,18 +260,18 @@
 											</div>
 											<div class="action-buttons">
 												<div class="btn-group btn-group-justified w-100">
-													<button class="btn bg-white font-weight-bold text-gray">Edit</button>
+													<button class="btn bg-white font-weight-bold text-gray" data-toggle="modal" data-target="#addressModal">Edit</button>
 													<button class="btn bg-white font-weight-bold text-orange">Delete</button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb30">									
+									<div class="col-lg-4 mb30">								
 										<div class="address-unit position-relative h-100 border-radius-5 bg-white add-new">
 											<a href="#" class="d-flex justify-content-center align-items-center">
 												<span class="text-center">
 													<img class="img-fluid d-block mb30 " src="images/add-address.png" alt="">
-													Add New Address											
+													Add New Address			
 												</span>
 											</a>
 										</div>
@@ -279,7 +279,6 @@
 								</div>								
 							</div>
 						</div>
-
 					</div>					
 				</div>
 
@@ -373,7 +372,7 @@
 	<script src="js/main.js"></script>	
 	<script>
 	jQuery(document).ready(function($){
-		$('.myaccount .address-unit .wrapper').on('click',function(){
+		$('.address-book .address-unit .wrapper').on('click',function(){
 			$(this).closest('.col-lg-4').siblings().find('.default-address').removeClass('default-address').find('.custom-control-input').prop('checked', false);
 			$(this).parent().addClass('default-address').find('.custom-control-input').prop('checked', true);
 		});

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Md. Mostak Shahid">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Hello, world!</title>
+</head>
+<body class="bg-off-white cart-page">
+	<section id="top-bar" class="bg-white">
+		<div class="content-wrap">
+			<div class="container-fluid">
+				<div class="wrapper position-relative">
+					<a href="#" class="back-btn"><img src="images/back-icon.png" alt=""></a>
+					<div class="text-center">
+						<a href="#"><img class="img-fluid img-cart-logo" src="images/logo.png" alt=""></a>
+					</div>					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="page-content" class="bg-off-white">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="d-none d-lg-block position-relative">
+					<div class="d-flex justify-content-between stepper">
+						<div class="wrapper text-center active bg-off-white">
+							<div class="name">Address</div>
+							<div class="stage">1</div>
+						</div>
+						<div class="wrapper text-center bg-off-white">
+							<div class="name">Confirmation</div>
+							<div class="stage">2</div>
+						</div>
+						<div class="wrapper text-center bg-off-white">
+							<div class="name">Payment</div>
+							<div class="stage">3</div>
+						</div>
+					</div>
+					<span class="line"></span>
+				</div>
+				<div class="d-lg-none mb20">
+					<div class="row align-items-center">
+						<div class="col-8">
+							<div class="text-green font-weight-bold font-size-16 line-height-22">Confirmation</div>
+							<div class="text-gray font-size-12 line-height-24">Next: Payment</div>
+						</div>
+						<div class="col-4 text-right">
+					        <div class="forth circle">
+						        <div class="circle-text d-flex justify-content-center align-items-center"><div class="textbox text-center"></div></div>
+						    </div>						
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="bg-white border border-radius-5 p20 p-md-30 mb20">
+							<div class="font-size-16 line-height-22 font-size-md-18 line-height-md-24 text-dark-green mb20 font-weight-bold">DELIVER TO:</div>	
+							<div class="font-size-16 line-height-28 font-weight-bold mb10">John Doe</div>
+							<div class="font-size-12 line-height-22 text-gray-2">
+								<p class="mb10">34/A, Road No: 5, Sector 9, House 7 Gulshan-2</p>
+								<p class="mb10">Dhaka - Uttara</p>
+								<p class="mb10">Mobile: <strong>01674100141</strong></p>
+							</div>	
+							<div class="text-green font-size-12 line-height-22 font-weight-bold text-uppercase font-weight-bold border-top pt10">USE ANOTHER ADDRESS</div>		
+						</div>
+						<div class="bg-white border border-radius-5 p20 p-md-30 mb20">
+							<div class="font-size-16 line-height-22 font-size-md-18 line-height-md-24 text-dark-green mb20 font-weight-bold">CHOOSE DELIVERY TIME</div>	
+							<div class="custom-control custom-radio mb20">
+								<input type="radio" class="custom-control-input" id="delivery-time-1" name="delivery-time" checked>
+								<label class="custom-control-label text-dark-green" for="delivery-time-1">ASAP (within 2 hours)</label>
+							</div>
+							<div class="custom-control custom-radio mb20">
+								<input type="radio" class="custom-control-input" id="delivery-time-2" name="delivery-time">
+								<label class="custom-control-label text-dark-green" for="delivery-time-2">Custom Time</label>
+							</div>	
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="date">Date</label>
+										<input type="date" class="form-control rounded-pill" name="date" id="date">
+									</div>									
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label for="time">Time</label>
+										<select name="time" id="time" class="form-control rounded-pill">
+											<option value="">06.00 pm - 07.00 PM</option>
+											<option value="">07.00 pm - 08.00 PM</option>
+										</select>
+									</div>									
+								</div>
+							</div>					
+						</div>
+						<a href="#" class="btn btn-block rounded-pill bg-green text-uppercase text-white font-weight-bold mb20">PROCEED TO PAYMENT</a>
+					</div>
+					<div class="col-lg-6">
+						<div class="bg-white border border-radius-5 p20 p-md-30">
+							<a href="#" class="btn btn-green font-weight-bold rounded-pill text-green mb20 float-right">Continue Shopping</a>						
+							<div class="font-size-16 line-height-22 font-size-md-18 line-height-md-24 text-dark-green mb20 font-weight-bold">ORDER SUMMARY</div>
+							<table class="table cart-table table-type-2 table-borderless">
+								<tr>
+									<td class="remove-col"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></td>
+									<td class="image-col"><img class="img-fluid img-cart-113x75" src="images/cart-01-113x75.png" alt="Product Name" width="113px" height="75px"></td>
+									<td class="details-col">
+										<div class="text-dark-green font-size-14 line-height-24 font-weight-bold">Anaz Couple Box 1</div>
+										<div class="text-gray-2 font-size-16 line-height-26">1 kg x 7</div>
+									</td>
+									<td class="text-right quatity">
+										<div class="text-dark-green font-size-16 line-height-26 font-weight-bold">৳ 1,080</div>
+										<input type="number" value="1" min="1" step="1"/>
+									</td>
+								</tr>
+								<tr>
+									<td class="remove-col"><a class="text-gray" href="#"><i class="fa fa-times-circle-o"></i></a></td>
+									<td class="image-col"><img class="img-fluid img-cart-113x75" src="images/cart-01-113x75.png" alt="Product Name" width="113px" height="75px"></td>
+									<td class="details-col">
+										<div class="text-dark-green font-size-14 line-height-24 font-weight-bold">Anaz Couple Box 1</div>
+										<div class="text-gray-2 font-size-16 line-height-26">1 kg x 7</div>
+									</td>
+									<td class="text-right quatity">
+										<div class="text-dark-green font-size-16 line-height-26 font-weight-bold">৳ 1,080</div>
+										<input type="number" value="1" min="1" step="1"/>
+									</td>
+								</tr>
+							</table>
+							<table class="table table-borderless summery-table">
+								<tbody>
+									<tr>
+										<td><div class="text-gray-2 font-size-16 line-height-26">Subtotal (4 items)</div></td>
+										<th>৳ 2,280</th>
+									</tr>
+									<tr>
+										<td><div class="text-gray-2 font-size-16 line-height-26">Shipping Fee</div></td>
+										<th>৳ 45</th>
+									</tr>
+								</tbody>
+							</table>
+							<div class="input-group coupon-group">
+								<input type="text" class="form-control" placeholder="Coupon code" aria-label="Coupon code" aria-describedby="button-addon2">
+								<div class="input-group-append">
+									<button class="btn text-orange" type="button" id="button-addon2">APPLY</button>
+								</div>
+							</div>	
+							<table class="table table-borderless mb-0">
+									<tbody><tr>
+										<th>Total (BDT)</th>
+										<th class="text-green text-right">৳ 2,280</th>
+									</tr>
+								</tbody></table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="plugins/circle-progress/dist/circle-progress.js"></script>
+	<script src="plugins/bootstrap-input-spinner.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	jQuery(document).ready(function($){
+		$('.forth.circle').circleProgress({
+			size: 70.0,
+		    startAngle: -(1/2) * Math.PI,
+		    value: .6666666666,
+		    fill: { color: '#008142' },
+		    thickness: 4,
+		}).on('circle-animation-progress', function(event, progress) {
+		    $(this).find('.textbox').html('<div class="step">Step</div><div class="stepcount">2/3</div>');
+		});	
+		$("input[type='number']").inputSpinner({
+			buttonsWidth: "16px",
+		});
+	});		
+	</script>
+</body>
+</html>

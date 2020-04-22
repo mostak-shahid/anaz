@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Md. Mostak Shahid">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Hello, world!</title>
+</head>
+<body class="bg-off-white">
+	<section id="top-bar" class="bg-white">
+		<div class="content-wrap">
+			<div class="container-fluid">
+				<div class="wrapper position-relative">
+					<a href="#" class="back-btn"><img src="images/back-icon.png" alt=""></a>
+					<div class="text-center">
+						<a href="#"><img class="img-fluid img-cart-logo" src="images/logo.png" alt=""></a>
+					</div>					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section id="page-content" class="bg-off-white">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row justify-content-lg-center no-gutters">
+					<div class="col-lg-6">
+						<div class="login-step step-phone form-container bg-white p30 p-md-50 login-wrapper position-relative active">
+							<div class="text-center mb30 mb-lg-40">
+								<img class="mb15" src="images/login.png" alt="Call Icon">
+								<h2 class="text-dark-green mb15">Enter Your Mobile Number</h2>
+								<div class="dark-green font-size-14 line-height-24">We will send an OTP to verify</div>
+							</div>
+							<form action="" method="post" class="needs-validation" novalidate>
+								<div class="form-group position-relative">
+									<label for="phone">Your Mobile Number</label>
+									<input name="phone" type="tel" class="form-control rounded-pill phone-input" id="phone" placeholder="Enter your mobile number" required>
+									<div class="invalid-feedback text-center">Please enter your mobile number.</div>
+									<img class="input-icon" src="images/login-phone.png">
+								</div>
+								<button type="submit" class="btn btn-block rounded-pill bg-green text-uppercase text-white font-weight-bold form-submit phone-submit mb20">Continue</button>
+							</form>
+						</div>
+						<div class="login-step step-varify form-container bg-white p30 p-md-50 login-wrapper position-relative">
+							<div class="text-center mb30 mb-lg-40">
+								<img class="mb15" src="images/smiled.png" alt="Call Icon">
+								<h2 class="text-dark-green mb15">Verify yourself</h2>
+								<div class="text-gray-2 font-size-14 line-height-24 mb20">A 6 digit PIN has been sent to</div>
+								<div class="mobile-number font-weight-bold">
+									<span>+8801670058131</span>
+									<a class="change-mobile" href="#"><img src="images/change-mobile.png" alt=""></a>
+								</div>
+							</div>
+							<form>
+								<div class="form-group text-center">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<input type="number" class="num validation-code" min="0" max="9" maxlength="1">
+									<div class="invalid-feedback text-center">PIN did not match. Check your number or SMS.</div>
+								</div>
+								<button type="submit" class="btn btn-block rounded-pill bg-green text-uppercase text-white font-weight-bold form-submit varify-submit mb20">VERIFY</button>
+							</form>
+							<div class="text-center login-info">
+								<p class="mb20">Resend Code in <span class="resend-count">00:59</span></p>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	jQuery(document).ready(function($){
+		$('.num').keyup(function (event) {
+			if(event.keyCode == 8)
+				$(this).prev('.num').focus();
+			else
+		    	$(this).next('.num').focus();
+		});
+		$('.phone-submit').on('click',function(e){
+			e.preventDefault();	
+			$(this).closest('.login-step').removeClass('active').siblings('.step-varify').addClass('active');		
+		});
+		$('.change-mobile').on('click',function(e){
+			e.preventDefault();
+			$(this).closest('.login-step').removeClass('active').siblings('.step-phone').addClass('active');
+		});
+    });		
+	</script>
+</body>
+</html>
